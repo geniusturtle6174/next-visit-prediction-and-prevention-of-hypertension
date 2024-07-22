@@ -53,6 +53,14 @@ python3 train_cv_nvp_rf.py fea_dir save_model_dir_name -classify
 * `save_model_dir_name`: Directory for saving traning parameters, trained models, and intermediate results.
 * Add `-d dim_1 [dim_2 dim3 ...]` to train using certain factors, where `dim_*` indicates zero-based feature index. See `fea_names` for indices of factor names.
 
+#### Obtaining feature importance
+
+```bash
+python3 get_fea_importance.py model_dir -agg
+```
+* `model_dir`: Directory of previously produced model files.
+* Results are written to stdout.
+
 ### Evaluation
 
 * Imputation of Missing values for test data is done is this stage.
