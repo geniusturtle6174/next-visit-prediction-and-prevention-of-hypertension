@@ -25,7 +25,7 @@ python3 data_to_pkl.py
 ```bash
 python3 pkl_to_fea.py save_fea_dir
 ```
-* `save_fea_dir`: Directory for saving produced feature files.
+* `save_fea_dir`: Directory for saving produced feature files. Files for training set are saved as `npy` files, file for test set is saved as `pkl` file.
 * Previously produced pkl file is automatically loaded.
 * May need to be run on a server with larger amount of RAM.
 
